@@ -182,6 +182,13 @@
   dependencies:
     "@babel/types" "^7.12.1"
 
+"@babel/helper-module-imports@^7.0.0":
+  version "7.12.5"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@babel/helper-module-imports/-/helper-module-imports-7.12.5.tgz#1bfc0229f794988f76ed0a4d4e90860850b54dfb"
+  integrity sha1-G/wCKfeUmI927QpNTpCGCFC1Tfs=
+  dependencies:
+    "@babel/types" "^7.12.5"
+
 "@babel/helper-module-imports@^7.0.0-beta.49", "@babel/helper-module-imports@^7.12.1":
   version "7.12.1"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@babel/helper-module-imports/-/helper-module-imports-7.12.1.tgz#1644c01591a15a2f084dd6d092d9430eb1d1216c"
@@ -464,7 +471,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-syntax-jsx@^7.12.1":
+"@babel/plugin-syntax-jsx@^7.12.1", "@babel/plugin-syntax-jsx@^7.2.0":
   version "7.12.1"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.12.1.tgz#9d9d357cc818aa7ae7935917c1257f67677a0926"
   integrity sha1-nZ01fMgYqnrnk1kXwSV/Z2d6CSY=
@@ -956,6 +963,13 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.5.5":
+  version "7.12.5"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha1-QQ5+SHRB4bNgwpvnFdhw2bmFiC4=
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.12.1"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@babel/runtime/-/runtime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
@@ -1000,6 +1014,135 @@
     "@babel/helper-validator-identifier" "^7.10.4"
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
+
+"@babel/types@^7.12.5":
+  version "7.12.6"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@babel/types/-/types-7.12.6.tgz#ae0e55ef1cce1fbc881cd26f8234eb3e657edc96"
+  integrity sha1-rg5V7xzOH7yIHNJvgjTrPmV+3JY=
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.10.4"
+    lodash "^4.17.19"
+    to-fast-properties "^2.0.0"
+
+"@emotion/babel-plugin-jsx-pragmatic@^0.1.5":
+  version "0.1.5"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/babel-plugin-jsx-pragmatic/-/babel-plugin-jsx-pragmatic-0.1.5.tgz#27debfe9c27c4d83574d509787ae553bf8a34d7e"
+  integrity sha1-J96/6cJ8TYNXTVCXh65VO/ijTX4=
+  dependencies:
+    "@babel/plugin-syntax-jsx" "^7.2.0"
+
+"@emotion/babel-preset-css-prop@^10.0.27":
+  version "10.1.0"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-10.1.0.tgz#4800943dff35bd82a83891b278565918bbed14a7"
+  integrity sha1-SACUPf81vYKoOJGyeFZZGLvtFKc=
+  dependencies:
+    "@babel/plugin-transform-react-jsx" "^7.12.1"
+    "@babel/plugin-transform-react-jsx-development" "^7.12.1"
+    "@babel/runtime" "^7.5.5"
+    "@emotion/babel-plugin-jsx-pragmatic" "^0.1.5"
+    babel-plugin-emotion "^10.0.27"
+
+"@emotion/cache@^10.0.27":
+  version "10.0.29"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/cache/-/cache-10.0.29.tgz#87e7e64f412c060102d589fe7c6dc042e6f9d1e0"
+  integrity sha1-h+fmT0EsBgEC1Yn+fG3AQub50eA=
+  dependencies:
+    "@emotion/sheet" "0.9.4"
+    "@emotion/stylis" "0.8.5"
+    "@emotion/utils" "0.11.3"
+    "@emotion/weak-memoize" "0.2.5"
+
+"@emotion/core@^10.0.28", "@emotion/core@^10.1.1":
+  version "10.1.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/core/-/core-10.1.1.tgz#c956c1365f2f2481960064bcb8c4732e5fb612c3"
+  integrity sha1-yVbBNl8vJIGWAGS8uMRzLl+2EsM=
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    "@emotion/cache" "^10.0.27"
+    "@emotion/css" "^10.0.27"
+    "@emotion/serialize" "^0.11.15"
+    "@emotion/sheet" "0.9.4"
+    "@emotion/utils" "0.11.3"
+
+"@emotion/css@^10.0.27":
+  version "10.0.27"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/css/-/css-10.0.27.tgz#3a7458198fbbebb53b01b2b87f64e5e21241e14c"
+  integrity sha1-OnRYGY+767U7AbK4f2Tl4hJB4Uw=
+  dependencies:
+    "@emotion/serialize" "^0.11.15"
+    "@emotion/utils" "0.11.3"
+    babel-plugin-emotion "^10.0.27"
+
+"@emotion/hash@0.8.0":
+  version "0.8.0"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
+  integrity sha1-u7/2iXj+/b5ozLUzvIy+HRr7VBM=
+
+"@emotion/is-prop-valid@0.8.8", "@emotion/is-prop-valid@^0.8.2":
+  version "0.8.8"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
+  integrity sha1-2yixxDaKJZtgqXMR1qlS1P0BrBo=
+  dependencies:
+    "@emotion/memoize" "0.7.4"
+
+"@emotion/memoize@0.7.4":
+  version "0.7.4"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
+  integrity sha1-Gb8PWvGRSREcQNmLsM+CEZ9dnus=
+
+"@emotion/serialize@^0.11.15", "@emotion/serialize@^0.11.16":
+  version "0.11.16"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/serialize/-/serialize-0.11.16.tgz#dee05f9e96ad2fb25a5206b6d759b2d1ed3379ad"
+  integrity sha1-3uBfnpatL7JaUga211my0e0zea0=
+  dependencies:
+    "@emotion/hash" "0.8.0"
+    "@emotion/memoize" "0.7.4"
+    "@emotion/unitless" "0.7.5"
+    "@emotion/utils" "0.11.3"
+    csstype "^2.5.7"
+
+"@emotion/sheet@0.9.4":
+  version "0.9.4"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/sheet/-/sheet-0.9.4.tgz#894374bea39ec30f489bbfc3438192b9774d32e5"
+  integrity sha1-iUN0vqOeww9Im7/DQ4GSuXdNMuU=
+
+"@emotion/styled-base@^10.0.27":
+  version "10.0.31"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/styled-base/-/styled-base-10.0.31.tgz#940957ee0aa15c6974adc7d494ff19765a2f742a"
+  integrity sha1-lAlX7gqhXGl0rcfUlP8ZdlovdCo=
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    "@emotion/is-prop-valid" "0.8.8"
+    "@emotion/serialize" "^0.11.15"
+    "@emotion/utils" "0.11.3"
+
+"@emotion/styled@^10.0.27":
+  version "10.0.27"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/styled/-/styled-10.0.27.tgz#12cb67e91f7ad7431e1875b1d83a94b814133eaf"
+  integrity sha1-Estn6R9610MeGHWx2DqUuBQTPq8=
+  dependencies:
+    "@emotion/styled-base" "^10.0.27"
+    babel-plugin-emotion "^10.0.27"
+
+"@emotion/stylis@0.8.5":
+  version "0.8.5"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/stylis/-/stylis-0.8.5.tgz#deacb389bd6ee77d1e7fcaccce9e16c5c7e78e04"
+  integrity sha1-3qyzib1u530ef8rMzp4WxcfnjgQ=
+
+"@emotion/unitless@0.7.5":
+  version "0.7.5"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
+  integrity sha1-dyESkcGQCnALinjPr9oxYNdpSe0=
+
+"@emotion/utils@0.11.3":
+  version "0.11.3"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/utils/-/utils-0.11.3.tgz#a759863867befa7e583400d322652a3f44820924"
+  integrity sha1-p1mGOGe++n5YNADTImUqP0SCCSQ=
+
+"@emotion/weak-memoize@0.2.5":
+  version "0.2.5"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
+  integrity sha1-ju2YLi7m9/TkTCU+EpYpgHke/UY=
 
 "@graphql-tools/batch-execute@^7.0.0":
   version "7.0.0"
@@ -1533,6 +1676,11 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
+"@popperjs/core@^2.1.1":
+  version "2.5.4"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@popperjs/core/-/core-2.5.4.tgz#de25b5da9f727985a3757fd59b5d028aba75841a"
+  integrity sha1-3iW12p9yeYWjdX/Vm10Cirp1hBo=
+
 "@reach/router@^1.3.4":
   version "1.3.4"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@reach/router/-/router-1.3.4.tgz#d2574b19370a70c80480ed91f3da840136d10f8c"
@@ -2030,6 +2178,145 @@
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
+
+"@workday/canvas-colors-web@^2.0.0":
+  version "2.0.0"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-colors-web/-/canvas-colors-web-2.0.0.tgz#1e50e4ab70a00d8ba6037536a328ac227ce2274f"
+  integrity sha1-HlDkq3CgDYumA3U2oyisInziJ08=
+
+"@workday/canvas-depth-web@^0.16.4":
+  version "0.16.4"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-depth-web/-/@workday/canvas-depth-web-0.16.4.tgz#3714a1a955055386a2b70cc05852162b1e056bf2"
+  integrity sha1-NxShqVUFU4aitwzAWFIWKx4Fa/I=
+
+"@workday/canvas-kit-labs-react-core@^4.3.1":
+  version "4.3.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-kit-labs-react-core/-/canvas-kit-labs-react-core-4.3.1.tgz#d2652e55bf1a36f839c070b90f92fffa0a9de295"
+  integrity sha1-0mUuVb8aNvg5wHC5D5L/+gqd4pU=
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/styled" "^10.0.27"
+    "@workday/canvas-colors-web" "^2.0.0"
+    "@workday/canvas-kit-react-common" "^4.3.1"
+    "@workday/canvas-kit-react-core" "^4.3.1"
+
+"@workday/canvas-kit-popup-stack@^4.3.1":
+  version "4.3.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-kit-popup-stack/-/canvas-kit-popup-stack-4.3.1.tgz#801b43ce8879b596555395bab1c4d73c2f13d3af"
+  integrity sha1-gBtDzoh5tZZVU5W6scTXPC8T068=
+
+"@workday/canvas-kit-react-button@^4.3.1":
+  version "4.3.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-kit-react-button/-/canvas-kit-react-button-4.3.1.tgz#0fb8b05c0251490b56ae1efd8a779c67fc1bab8c"
+  integrity sha1-D7iwXAJRSQtWrh79inecZ/wbq4w=
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/is-prop-valid" "^0.8.2"
+    "@emotion/styled" "^10.0.27"
+    "@workday/canvas-kit-labs-react-core" "^4.3.1"
+    "@workday/canvas-kit-react-common" "^4.3.1"
+    "@workday/canvas-kit-react-core" "^4.3.1"
+    "@workday/canvas-kit-react-icon" "^4.3.1"
+    "@workday/canvas-system-icons-web" "^1.0.20"
+    "@workday/design-assets-types" "^0.2.4"
+
+"@workday/canvas-kit-react-card@^4.3.1":
+  version "4.3.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-kit-react-card/-/canvas-kit-react-card-4.3.1.tgz#9111ef96573826ee28b206a7a36fb2773ebf85c9"
+  integrity sha1-kRHvllc4Ju4osgano2+ydz6/hck=
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/is-prop-valid" "^0.8.2"
+    "@emotion/styled" "^10.0.27"
+    "@workday/canvas-kit-react-core" "^4.3.1"
+
+"@workday/canvas-kit-react-common@^4.3.1":
+  version "4.3.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-kit-react-common/-/canvas-kit-react-common-4.3.1.tgz#0c8456d3da2721dff14163adcdc825423a86e254"
+  integrity sha1-DIRW09onId/xQWOtzcglQjqG4lQ=
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/styled" "^10.0.27"
+    "@workday/canvas-colors-web" "^2.0.0"
+    "@workday/canvas-kit-react-core" "^4.3.1"
+    chroma-js "^2.1.0"
+    emotion-theming "^10.0.10"
+    lodash "^4.17.14"
+    rtl-css-js "^1.13.1"
+    uuid "^3.3.3"
+
+"@workday/canvas-kit-react-core@^4.3.1":
+  version "4.3.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-kit-react-core/-/canvas-kit-react-core-4.3.1.tgz#b73f135454ff09ddc8bc4a2ad51590761232eb41"
+  integrity sha1-tz8TVFT/Cd3IvEoq1RWQdhIy60E=
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/styled" "^10.0.27"
+    "@workday/canvas-colors-web" "^2.0.0"
+    "@workday/canvas-depth-web" "^0.16.4"
+    "@workday/canvas-space-web" "^0.15.5"
+    element-closest "^3.0.2"
+    lodash "^4.17.14"
+
+"@workday/canvas-kit-react-icon@^4.3.1":
+  version "4.3.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-kit-react-icon/-/canvas-kit-react-icon-4.3.1.tgz#b7d713ab9a85698c2c983731523325593f164bdd"
+  integrity sha1-t9cTq5qFaYwsmDcxUjMlWT8WS90=
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/is-prop-valid" "^0.8.2"
+    "@emotion/styled" "^10.0.27"
+    "@workday/canvas-kit-react-common" "^4.3.1"
+    "@workday/canvas-kit-react-core" "^4.3.1"
+    "@workday/design-assets-types" "^0.2.4"
+
+"@workday/canvas-kit-react-popup@^4.3.1":
+  version "4.3.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-kit-react-popup/-/canvas-kit-react-popup-4.3.1.tgz#8323dda0a0fec94dc612b3bb0f8ec1428666b57b"
+  integrity sha1-gyPdoKD+yU3GErO7D47BQoZmtXs=
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/is-prop-valid" "^0.8.2"
+    "@emotion/styled" "^10.0.27"
+    "@popperjs/core" "^2.1.1"
+    "@workday/canvas-kit-popup-stack" "^4.3.1"
+    "@workday/canvas-kit-react-button" "^4.3.1"
+    "@workday/canvas-kit-react-card" "^4.3.1"
+    "@workday/canvas-kit-react-common" "^4.3.1"
+    "@workday/canvas-kit-react-core" "^4.3.1"
+    "@workday/canvas-system-icons-web" "^1.0.20"
+    focus-trap-js "1.1.0"
+    uuid "^3.3.3"
+
+"@workday/canvas-kit-react-tooltip@^4.3.1":
+  version "4.3.1"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-kit-react-tooltip/-/canvas-kit-react-tooltip-4.3.1.tgz#853c7167ad1d1df2b10a134c256757ef7b1f002e"
+  integrity sha1-hTxxZ60dHfKxChNMJWdX73sfAC4=
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/styled" "^10.0.27"
+    "@workday/canvas-kit-react-common" "^4.3.1"
+    "@workday/canvas-kit-react-core" "^4.3.1"
+    "@workday/canvas-kit-react-popup" "^4.3.1"
+    react-innertext "^1.1.5"
+    uuid "^3.3.3"
+
+"@workday/canvas-space-web@^0.15.5":
+  version "0.15.8"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-space-web/-/canvas-space-web-0.15.8.tgz#ec337b067d9108d02d0241e8f31c852d50c8c9f9"
+  integrity sha1-7DN7Bn2RCNAtAkHo8xyFLVDIyfk=
+
+"@workday/canvas-system-icons-web@^1.0.20":
+  version "1.0.40"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/canvas-system-icons-web/-/canvas-system-icons-web-1.0.40.tgz#cd3d57cefd85a41cf1b2cd90846122edfcb6fcae"
+  integrity sha1-zT1Xzv2FpBzxss2QhGEi7fy2/K4=
+  dependencies:
+    "@workday/design-assets-types" "0.2.8"
+
+"@workday/design-assets-types@0.2.8", "@workday/design-assets-types@^0.2.4":
+  version "0.2.8"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/@workday/design-assets-types/-/design-assets-types-0.2.8.tgz#54026b4e6ea79861b12837a7deb83db9a16caad4"
+  integrity sha1-VAJrTm6nmGGxKDen3rg9uaFsqtQ=
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -2548,6 +2835,22 @@ babel-plugin-dynamic-import-node@^2.3.3:
   dependencies:
     object.assign "^4.1.0"
 
+babel-plugin-emotion@^10.0.27:
+  version "10.0.33"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/babel-plugin-emotion/-/babel-plugin-emotion-10.0.33.tgz#ce1155dcd1783bbb9286051efee53f4e2be63e03"
+  integrity sha1-zhFV3NF4O7uShgUe/uU/TivmPgM=
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0"
+    "@emotion/hash" "0.8.0"
+    "@emotion/memoize" "0.7.4"
+    "@emotion/serialize" "^0.11.16"
+    babel-plugin-macros "^2.0.0"
+    babel-plugin-syntax-jsx "^6.18.0"
+    convert-source-map "^1.5.0"
+    escape-string-regexp "^1.0.5"
+    find-root "^1.1.0"
+    source-map "^0.5.7"
+
 babel-plugin-lodash@3.3.4:
   version "3.3.4"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/babel-plugin-lodash/-/babel-plugin-lodash-3.3.4.tgz#4f6844358a1340baed182adbeffa8df9967bc196"
@@ -2559,7 +2862,7 @@ babel-plugin-lodash@3.3.4:
     lodash "^4.17.10"
     require-package-name "^2.0.1"
 
-babel-plugin-macros@^2.8.0:
+babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.8.0:
   version "2.8.0"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/babel-plugin-macros/-/babel-plugin-macros-2.8.0.tgz#0f958a7cc6556b1e65344465d99111a1e5e10138"
   integrity sha1-D5WKfMZVax5lNERl2ZERoeXhATg=
@@ -2572,6 +2875,11 @@ babel-plugin-remove-graphql-queries@^2.9.20:
   version "2.9.20"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.20.tgz#69ad42efdb3b4340992080afba101d2d1a2843b2"
   integrity sha1-aa1C79s7Q0CZIICvuhAdLRooQ7I=
+
+babel-plugin-syntax-jsx@^6.18.0:
+  version "6.18.0"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
+  integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
 
 babel-plugin-syntax-object-rest-spread@^6.8.0:
   version "6.13.0"
@@ -3408,6 +3716,13 @@ chownr@^2.0.0:
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha1-Fb++U9LqtM9w8YqM1o6+Wzyx3s4=
 
+chroma-js@^2.1.0:
+  version "2.1.0"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/chroma-js/-/chroma-js-2.1.0.tgz#c0be48a21fe797ef8965608c1c4f911ef2da49d5"
+  integrity sha1-wL5Ioh/nl++JZWCMHE+RHvLaSdU=
+  dependencies:
+    cross-env "^6.0.3"
+
 chrome-trace-event@^1.0.2:
   version "1.0.2"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/chrome-trace-event/-/chrome-trace-event-1.0.2.tgz#234090ee97c7d4ad1a2c4beae27505deffc608a4"
@@ -3765,7 +4080,7 @@ convert-hrtime@^3.0.0:
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/convert-hrtime/-/convert-hrtime-3.0.0.tgz#62c7593f5809ca10be8da858a6d2f702bcda00aa"
   integrity sha1-YsdZP1gJyhC+jahYptL3ArzaAKo=
 
-convert-source-map@^1.7.0:
+convert-source-map@^1.5.0, convert-source-map@^1.7.0:
   version "1.7.0"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/convert-source-map/-/convert-source-map-1.7.0.tgz#17a2cb882d7f77d3490585e2ce6c524424a3a442"
   integrity sha1-F6LLiC1/d9NJBYXizmxSRCSjpEI=
@@ -3912,6 +4227,13 @@ create-react-context@0.3.0:
   dependencies:
     gud "^1.0.0"
     warning "^4.0.3"
+
+cross-env@^6.0.3:
+  version "6.0.3"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/cross-env/-/cross-env-6.0.3.tgz#4256b71e49b3a40637a0ce70768a6ef5c72ae941"
+  integrity sha1-Qla3HkmzpAY3oM5wdopu9ccq6UE=
+  dependencies:
+    cross-spawn "^7.0.0"
 
 cross-fetch@3.0.6:
   version "3.0.6"
@@ -4145,6 +4467,11 @@ csso@^4.0.2:
   integrity sha1-HTEZPvqZuHqmutbAzvFV5UPQnos=
   dependencies:
     css-tree "^1.0.0"
+
+csstype@^2.5.7:
+  version "2.6.13"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/csstype/-/csstype-2.6.13.tgz#a6893015b90e84dd6e85d0e3b442a1e84f2dbe0f"
+  integrity sha1-pokwFbkOhN1uhdDjtEKh6E8tvg8=
 
 csstype@^3.0.2:
   version "3.0.4"
@@ -4729,6 +5056,11 @@ electron-to-chromium@^1.3.585:
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/electron-to-chromium/-/electron-to-chromium-1.3.585.tgz#71cdb722c73488b9475ad1c572cf43a763ef9081"
   integrity sha1-cc23Isc0iLlHWtHFcs9Dp2PvkIE=
 
+element-closest@^3.0.2:
+  version "3.0.2"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/element-closest/-/element-closest-3.0.2.tgz#3814a69a84f30e48e63eaf57341f4dbf4227d2aa"
+  integrity sha1-OBSmmoTzDkjmPq9XNB9Nv0In0qo=
+
 elliptic@^6.5.3:
   version "6.5.3"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/elliptic/-/elliptic-6.5.3.tgz#cb59eb2efdaf73a0bd78ccd7015a62ad6e0f93d6"
@@ -4761,6 +5093,15 @@ emojis-list@^3.0.0:
   version "3.0.0"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
   integrity sha1-VXBmIEatKeLpFucariYKvf9Pang=
+
+emotion-theming@^10.0.10:
+  version "10.0.27"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/emotion-theming/-/emotion-theming-10.0.27.tgz#1887baaec15199862c89b1b984b79806f2b9ab10"
+  integrity sha1-GIe6rsFRmYYsibG5hLeYBvK5qxA=
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    "@emotion/weak-memoize" "0.2.5"
+    hoist-non-react-statics "^3.3.0"
 
 encodeurl@~1.0.2:
   version "1.0.2"
@@ -5693,6 +6034,11 @@ find-cache-dir@^3.3.1:
     make-dir "^3.0.2"
     pkg-dir "^4.1.0"
 
+find-root@^1.1.0:
+  version "1.1.0"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/find-root/-/find-root-1.1.0.tgz#abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"
+  integrity sha1-q8/Iunb3CMQql7PWhbfpRQv7nOQ=
+
 find-up@^1.0.0:
   version "1.1.2"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/find-up/-/find-up-1.1.2.tgz#6b2e9822b1a2ce0a60ab64d610eccad53cb24d0f"
@@ -5751,6 +6097,11 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+focus-trap-js@1.1.0:
+  version "1.1.0"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/focus-trap-js/-/focus-trap-js-1.1.0.tgz#110f8fc56f694b257605afc19a1c7928ff7e57c3"
+  integrity sha1-EQ+PxW9pSyV2Ba/Bmhx5KP9+V8M=
 
 follow-redirects@1.5.10:
   version "1.5.10"
@@ -6001,6 +6352,14 @@ gatsby-page-utils@^0.2.29:
     glob "^7.1.6"
     lodash "^4.17.20"
     micromatch "^4.0.2"
+
+gatsby-plugin-emotion@^4.3.14:
+  version "4.3.15"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.3.15.tgz#2ef83b8e390ccb62585fe1d6483e234ee29032ce"
+  integrity sha1-Lvg7jjkMy2JYX+HWSD4jTuKQMs4=
+  dependencies:
+    "@babel/runtime" "^7.11.2"
+    "@emotion/babel-preset-css-prop" "^10.0.27"
 
 gatsby-plugin-manifest@^2.4.37:
   version "2.4.37"
@@ -10815,6 +11174,11 @@ react-hot-loader@^4.12.21:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
+react-innertext@^1.1.5:
+  version "1.1.5"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/react-innertext/-/react-innertext-1.1.5.tgz#8147ac54db3f7067d95f49e2d2c05a720d27d8d0"
+  integrity sha1-gUesVNs/cGfZX0ni0sBacg0n2NA=
+
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -11347,6 +11711,13 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+rtl-css-js@^1.13.1:
+  version "1.14.0"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/rtl-css-js/-/rtl-css-js-1.14.0.tgz#daa4f192a92509e292a0519f4b255e6e3c076b7d"
+  integrity sha1-2qTxkqklCeKSoFGfSyVebjwHa30=
+  dependencies:
+    "@babel/runtime" "^7.1.2"
 
 run-async@^2.2.0, run-async@^2.4.0:
   version "2.4.1"
@@ -11901,7 +12272,7 @@ source-map@0.7.3, source-map@^0.7.3:
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha1-UwL4FpAxc1ImVECS5kmB91F1A4M=
 
-source-map@^0.5.0, source-map@^0.5.6:
+source-map@^0.5.0, source-map@^0.5.6, source-map@^0.5.7:
   version "0.5.7"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
@@ -13164,7 +13535,7 @@ utils-merge@1.0.1:
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@3.4.0, uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2, uuid@^3.4.0:
+uuid@3.4.0, uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2, uuid@^3.3.3, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha1-sj5DWK+oogL+ehAK8fX4g/AgB+4=

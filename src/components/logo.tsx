@@ -32,7 +32,7 @@ const Logo = () => {
 
   return (
     <Img
-      style={{ width: 50, heighht: 50 }}
+      style={{ width: 50, heighht: 50, borderRadius: "50%" }}
       fluid={data.placeholderImage.childImageSharp.fluid}
     />
   )
