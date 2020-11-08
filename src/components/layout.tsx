@@ -13,7 +13,7 @@ import Header from "./header"
 import "./layout.css"
 
 export interface LayoutProps {
-  children: React.ReactChildren
+  children: React.ReactNode
 }
 
 const Layout = ({ children }: LayoutProps) => {

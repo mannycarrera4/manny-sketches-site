@@ -6155,6 +6155,26 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
+framer-motion@^2.9.4:
+  version "2.9.4"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/framer-motion/-/framer-motion-2.9.4.tgz#366656ae240776c923cbd4359815e5c1ed56084d"
+  integrity sha1-NmZWriQHdskjy9Q1mBXlwe1WCE0=
+  dependencies:
+    framesync "^4.1.0"
+    hey-listen "^1.0.8"
+    popmotion "9.0.0-rc.20"
+    style-value-types "^3.1.9"
+    tslib "^1.10.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
+framesync@^4.1.0:
+  version "4.1.0"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/framesync/-/framesync-4.1.0.tgz#69a8db3ca432dc70d6a76ba882684a1497ef068a"
+  integrity sha1-aajbPKQy3HDWp2uogmhKFJfvBoo=
+  dependencies:
+    hey-listen "^1.0.5"
+
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
@@ -7265,6 +7285,11 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=
+
+hey-listen@^1.0.5, hey-listen@^1.0.8:
+  version "1.0.8"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
+  integrity sha1-jllWH/ckkI3hqpJO1uzISlapqmg=
 
 hicat@^0.7.0:
   version "0.7.0"
@@ -10396,6 +10421,16 @@ pnp-webpack-plugin@^1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
+popmotion@9.0.0-rc.20:
+  version "9.0.0-rc.20"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/popmotion/-/popmotion-9.0.0-rc.20.tgz#f3550042ae31957b5416793ae8723200951ad39d"
+  integrity sha1-81UAQq4xlXtUFnk66HIyAJUa050=
+  dependencies:
+    framesync "^4.1.0"
+    hey-listen "^1.0.8"
+    style-value-types "^3.1.9"
+    tslib "^1.10.0"
+
 portfinder@^1.0.26:
   version "1.0.28"
   resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/portfinder/-/portfinder-1.0.28.tgz#67c4622852bd5374dd1dd900f779f53462fac778"
@@ -12713,6 +12748,14 @@ style-to-object@^0.3.0:
   integrity sha1-sbeQ0gWZHMeDgBlnIUl57hmnbkY=
   dependencies:
     inline-style-parser "0.1.1"
+
+style-value-types@^3.1.9:
+  version "3.1.9"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/style-value-types/-/style-value-types-3.1.9.tgz#faf7da660d3f284ed695cff61ea197d85b9122cc"
+  integrity sha1-+vfaZg0/KE7Wlc/2HqGX2FuRIsw=
+  dependencies:
+    hey-listen "^1.0.8"
+    tslib "^1.10.0"
 
 stylehacks@^4.0.0:
   version "4.0.3"
