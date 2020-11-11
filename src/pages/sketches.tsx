@@ -5,7 +5,7 @@ import SketchesLayout from "../components/sketchesLayout"
 
 const SketchesPage = () => (
   <Layout>
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", flexFlow: "wrap" }}>
       <SketchesLayout />
     </div>
   </Layout>

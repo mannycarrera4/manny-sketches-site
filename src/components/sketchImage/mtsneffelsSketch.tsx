@@ -17,14 +17,18 @@ import styled from "@emotion/styled"
 const StyledSketchContainer = styled("div")({
   position: "relative",
   width: 300,
+  img: {
+    borderTopLeftRadius: "8px",
+    borderTopRightRadius: "8px",
+  },
 })
 
-const HawaiiSketch = () => {
+const MtSneffelsSketch = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "hawaii.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "mtsneffels.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -46,10 +50,10 @@ const HawaiiSketch = () => {
   )
 }
 
-const hawaiiSketch = {
-  name: "hawaii",
-  img: () => <HawaiiSketch />,
-  desc: "a sketch of a beautiful waterfall in hawai",
+const mtsneffelsSketch = {
+  name: "mtsneffels",
+  img: () => <MtSneffelsSketch />,
+  desc: "a sketch of a beautiful waterfall in hawaii",
 }
 
-export default hawaiiSketch
+export default mtsneffelsSketch

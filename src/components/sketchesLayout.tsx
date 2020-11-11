@@ -1,6 +1,6 @@
 import React from "react"
 import Card from "@workday/canvas-kit-react-card"
-import * as Sketches from "."
+import * as Sketches from "./sketchImage"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -27,7 +27,6 @@ const SketchesLayout = () => {
               display: "inline-flex",
               margin: "8px",
               width: 300,
-              height: 300,
               justifyContent: "center",
               paddingTop: 0,
             }}
