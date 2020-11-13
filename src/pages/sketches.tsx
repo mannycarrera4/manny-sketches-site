@@ -5,7 +5,13 @@ import SketchesLayout from "../components/sketchesLayout"
 
 const SketchesPage = () => (
   <Layout>
-    <div style={{ display: "flex", flexFlow: "wrap" }}>
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+      }}
+    >
       <SketchesLayout />
     </div>
   </Layout>

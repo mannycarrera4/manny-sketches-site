@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import Logo from "../components/logo"
+import styled from "@emotion/styled"
 
 export interface HeaderProps {
   siteTitle: string
@@ -38,16 +39,7 @@ const Header = ({ siteTitle }: HeaderProps) => (
           <Logo />
         </Link>
         <div>
-          <Link
-            style={{
-              color: "#252c71",
-              fontFamily: "sans-serif",
-              padding: "2px 8px",
-            }}
-            to="/"
-          >
-            About
-          </Link>
+          <Link to="/">About</Link>
           <Link
             style={{
               color: "#252c71",
