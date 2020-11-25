@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/manny-sketches-site",
+  pathPrefix: "/manny-sketches-site/public",
   siteMetadata: {
     title: `Manny Sketches`,
     description: `A site to host my sketches and learn more about who I am`,
@@ -10,8 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `static`,
+        path: `${__dirname}/static`,
       },
     },
     `gatsby-transformer-sharp`,

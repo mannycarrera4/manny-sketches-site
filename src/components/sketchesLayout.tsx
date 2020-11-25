@@ -26,7 +26,7 @@ const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
         const sketch = Sketches[sketchKey]
 
         return (
-          <motion.div whileHover={{ scale: 1.05 }}>
+          <motion.div key={sketch.name} whileHover={{ scale: 1.05 }}>
             <Card
               padding={"0px"}
               style={{
@@ -38,7 +38,6 @@ const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
                 paddingTop: 0,
                 cursor: "pointer",
               }}
-              key={sketch.name}
               onClick={() =>
                 handleGetImage(sketch.img(), sketch.name, sketch.desc)
               }
