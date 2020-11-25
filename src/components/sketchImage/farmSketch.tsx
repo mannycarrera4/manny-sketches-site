@@ -19,12 +19,7 @@ const FarmSketch = () => {
     return <div>Picture not found</div>
   }
 
-  return (
-    <Img
-      style={{ maxHeight: 200 }}
-      fluid={data.placeholderImage.childImageSharp.fluid}
-    />
-  )
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 const farmSketch = {

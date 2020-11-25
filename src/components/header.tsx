@@ -7,6 +7,31 @@ export interface HeaderProps {
   siteTitle: string
 }
 
+const StyledLink = styled("div")({
+  display: "inline-flex",
+  flexDirection: "column",
+  fontFamily: "sans-serif",
+  margin: "2px 6px",
+  a: {
+    textDecoration: "none",
+    color: "#3182ce",
+  },
+  ".hover-underline": {
+    height: "3px",
+    backgroundColor: "#2b6cb0",
+    width: 0,
+    transition: "width 150ms ease-out",
+  },
+  "&:hover": {
+    a: {
+      color: "#2b6cb0",
+    },
+    ".hover-underline": {
+      width: "100%",
+    },
+  },
+})
+
 const Header = ({ siteTitle }: HeaderProps) => (
   <header
     style={{
@@ -39,27 +64,18 @@ const Header = ({ siteTitle }: HeaderProps) => (
           <Logo />
         </Link>
         <div>
-          <Link to="/">About</Link>
-          <Link
-            style={{
-              color: "#252c71",
-              fontFamily: "sans-serif",
-              padding: "2px 8px",
-            }}
-            to="/"
-          >
-            Contact
-          </Link>
-          <Link
-            style={{
-              color: "#252c71",
-              fontFamily: "sans-serif",
-              padding: "2px 8px",
-            }}
-            to="/"
-          >
-            Sketches
-          </Link>
+          <StyledLink>
+            <Link to="/">About</Link>
+            <div className="hover-underline"></div>
+          </StyledLink>
+          <StyledLink>
+            <Link to="/">Contact</Link>
+            <div className="hover-underline"></div>
+          </StyledLink>
+          <StyledLink>
+            <Link to="/">Sketches</Link>
+            <div className="hover-underline"></div>
+          </StyledLink>
         </div>
       </div>
     </div>

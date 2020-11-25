@@ -8,36 +8,42 @@ const ImportedSketches = Object.keys(Sketches)
 
 const StyledImageContainer = styled("div")({
   position: "relative",
-  img: {
-    borderTopLeftRadius: "8px",
-    borderTopRightRadius: "8px",
-  },
+  height: 200,
+  width: 300,
+  overflow: "hidden",
+  borderRadius: "8px",
 })
 
-const SketchesLayout = () => {
+export interface SketchesLayoutProps {
+  handleGetImage: (img: React.ReactNode) => void
+}
+
+const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
   return (
     <>
       {ImportedSketches.map(sketchKey => {
         // @ts-ignore
         const sketch = Sketches[sketchKey]
         return (
-          <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }}>
+          <motion.div
+            key={sketch.name}
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.05 }}
+          >
             <Card
               padding={"0px"}
               style={{
                 display: "inline-flex",
                 margin: "8px",
                 width: 300,
-                height: 282,
+                height: 200,
                 justifyContent: "center",
                 paddingTop: 0,
               }}
-              key={sketch.name}
+              onClick={() => handleGetImage(sketch.img())}
             >
-              <div>
-                <StyledImageContainer>{sketch.img()}</StyledImageContainer>
-                <div style={{ padding: "20px" }}>{sketch.desc}</div>
-              </div>
+              <StyledImageContainer>{sketch.img()}</StyledImageContainer>
+              {/* {sketch.desc} */}
             </Card>
           </motion.div>
         )

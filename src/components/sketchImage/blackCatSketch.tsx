@@ -19,12 +19,7 @@ const BlackCatSketch = () => {
     return <div>Picture not found</div>
   }
 
-  return (
-    <Img
-      style={{ maxHeight: 200, width: 300 }}
-      fluid={data.placeholderImage.childImageSharp.fluid}
-    />
-  )
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 const blackCatSketch = {

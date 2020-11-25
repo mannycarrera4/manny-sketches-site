@@ -19,12 +19,7 @@ const HawaiiSketch = () => {
     return <div>Picture not found</div>
   }
 
-  return (
-    <Img
-      style={{ height: 200 }}
-      fluid={data.placeholderImage.childImageSharp.fluid}
-    />
-  )
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 const hawaiiSketch = {

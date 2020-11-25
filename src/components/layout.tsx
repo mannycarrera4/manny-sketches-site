@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { ChakraProvider } from "@chakra-ui/react"
 
 import Header from "./header"
 import "./layout.css"
@@ -28,7 +29,7 @@ const Layout = ({ children }: LayoutProps) => {
   `)
 
   return (
-    <>
+    <ChakraProvider>
       <Header siteTitle={"Manny Sketches"} />
       <div
         style={{
@@ -44,7 +45,7 @@ const Layout = ({ children }: LayoutProps) => {
           }}
         ></footer>
       </div>
-    </>
+    </ChakraProvider>
   )
 }
 
