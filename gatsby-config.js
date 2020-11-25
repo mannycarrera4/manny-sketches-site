@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/manny-sketches-site/public",
+  pathPrefix: "/manny-sketches-site",
   siteMetadata: {
     title: `Manny Sketches`,
     description: `A site to host my sketches and learn more about who I am`,
@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `static`,
+        name: `images`,
         path: `${__dirname}/static`,
       },
     },
@@ -19,12 +19,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `manny-sketches-site`,
+        name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: `static/personal-logo.jpg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-emotion`,
