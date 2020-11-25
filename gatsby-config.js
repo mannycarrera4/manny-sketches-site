@@ -1,8 +1,9 @@
 module.exports = {
+  pathPrefix: "/manny-sketches-site/public",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Manny Sketches`,
+    description: `A site to host my sketches and learn more about who I am`,
+    author: `Manuel Carrera`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,15 +18,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+      // options: {
+      //   name: `manny-sketches-site`,
+      //   short_name: `starter`,
+      //   start_url: `/`,
+      //   background_color: `#663399`,
+      //   theme_color: `#663399`,
+      //   display: `minimal-ui`,
+      // },
     },
     `gatsby-plugin-emotion`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
