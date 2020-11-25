@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"3XHS":function(t,n,e){"use strict";e.r(n);e("q1tI");var u=e("qKvR");n.default=function(){return Object(u.b)("main",null,Object(u.b)("h1",null,"About the Author"),Object(u.b)("p",null,"Welcome to my Gatsby site."))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-b2f7b41755900b41ba24.js.map
