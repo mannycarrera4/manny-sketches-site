@@ -38,7 +38,7 @@ const Layout = ({ children }: LayoutProps) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main style={{ marginTop: 174 }}>{children}</main>
         <footer
           style={{
             marginTop: `2rem`,

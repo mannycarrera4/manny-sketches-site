@@ -6,9 +6,9 @@ import styled from "@emotion/styled"
 const LighthouseSketch = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "lighthouse.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "lighthouse-ma.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -37,6 +37,10 @@ const Header = ({ siteTitle }: HeaderProps) => (
     style={{
       background: `white`,
       marginBottom: `1.45rem`,
+      position: "fixed",
+      top: 0,
+      width: "100%",
+      zIndex: 1,
     }}
   >
     <div
@@ -68,12 +72,12 @@ const Header = ({ siteTitle }: HeaderProps) => (
             <Link to="/">About</Link>
             <div className="hover-underline"></div>
           </StyledLink>
-          <StyledLink>
+          {/* <StyledLink>
             <Link to="/">Contact</Link>
             <div className="hover-underline"></div>
-          </StyledLink>
+          </StyledLink> */}
           <StyledLink>
-            <Link to="/">Sketches</Link>
+            <Link to="/sketches">Sketches</Link>
             <div className="hover-underline"></div>
           </StyledLink>
         </div>

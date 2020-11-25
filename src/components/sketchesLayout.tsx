@@ -2,7 +2,6 @@ import React from "react"
 import Card from "@workday/canvas-kit-react-card"
 import * as Sketches from "./sketchImage"
 import styled from "@emotion/styled"
-import { motion } from "framer-motion"
 
 const ImportedSketches = Object.keys(Sketches)
 
@@ -24,28 +23,24 @@ const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
       {ImportedSketches.map(sketchKey => {
         // @ts-ignore
         const sketch = Sketches[sketchKey]
+        console.warn(sketch)
         return (
-          <motion.div
+          <Card
+            padding={"0px"}
+            style={{
+              display: "inline-flex",
+              margin: "8px",
+              width: 300,
+              height: 200,
+              justifyContent: "center",
+              paddingTop: 0,
+            }}
             key={sketch.name}
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.05 }}
+            onClick={() => handleGetImage(sketch.img())}
           >
-            <Card
-              padding={"0px"}
-              style={{
-                display: "inline-flex",
-                margin: "8px",
-                width: 300,
-                height: 200,
-                justifyContent: "center",
-                paddingTop: 0,
-              }}
-              onClick={() => handleGetImage(sketch.img())}
-            >
-              <StyledImageContainer>{sketch.img()}</StyledImageContainer>
-              {/* {sketch.desc} */}
-            </Card>
-          </motion.div>
+            <StyledImageContainer>{sketch.img()}</StyledImageContainer>
+            {/* {sketch.desc} */}
+          </Card>
         )
       })}
     </>
