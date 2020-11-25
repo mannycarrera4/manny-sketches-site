@@ -18,14 +18,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
-      // options: {
-      //   name: `manny-sketches-site`,
-      //   short_name: `starter`,
-      //   start_url: `/`,
-      //   background_color: `#663399`,
-      //   theme_color: `#663399`,
-      //   display: `minimal-ui`,
-      // },
+      options: {
+        name: `manny-sketches-site`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+      },
     },
     `gatsby-plugin-emotion`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

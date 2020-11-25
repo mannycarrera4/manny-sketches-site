@@ -24,7 +24,7 @@ const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
       {ImportedSketches.map(sketchKey => {
         // @ts-ignore
         const sketch = Sketches[sketchKey]
-        console.warn(sketch)
+
         return (
           <motion.div whileHover={{ scale: 1.05 }}>
             <Card
