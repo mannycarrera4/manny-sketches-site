@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/manny-sketches-site/public",
+  pathPrefix: "/manny-sketches-site",
   siteMetadata: {
     title: `Manny Sketches`,
     description: `A site to host my sketches and learn more about who I am`,
