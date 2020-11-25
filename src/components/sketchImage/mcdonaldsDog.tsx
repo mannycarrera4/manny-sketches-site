@@ -23,9 +23,10 @@ const BlackCatSketch = () => {
 }
 
 const blackCatSketch = {
-  name: "mcdonaldsdog",
+  name: "McDonalds Dog",
   img: () => <BlackCatSketch />,
-  desc: "A friends black cat with a little flare",
+  desc:
+    "I got commissioned to draw this happy looking dog. I loved that he was next to a McDonalds box.",
 }
 
 export default blackCatSketch

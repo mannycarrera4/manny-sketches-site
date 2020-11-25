@@ -23,9 +23,10 @@ const FlatironsSketch = () => {
 }
 
 const flatironsSketch = {
-  name: "flatirons",
+  name: "Flatirons",
   img: () => <FlatironsSketch />,
-  desc: "An old rusty sugar cane trailer at our farm back home",
+  desc:
+    "I remember the first time I saw the flatirons, my job dropped. I'm glad I can call this place home.",
 }
 
 export default flatironsSketch

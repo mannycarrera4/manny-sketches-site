@@ -23,9 +23,10 @@ const ArturoSketch = () => {
 }
 
 const arturoSketch = {
-  name: "arturo",
+  name: "Arturo",
   img: () => <ArturoSketch />,
-  desc: "An old rusty sugar cane trailer at our farm back home",
+  desc:
+    "This is my nephew, Arturo. He's a little monster. I usually never draw people but I made an exception for this little booger.",
 }
 
 export default arturoSketch

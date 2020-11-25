@@ -23,9 +23,9 @@ const BildmoreCastleSketch = () => {
 }
 
 const bildmoreCastleSketch = {
-  name: "biltmore",
+  name: "Biltmore Mansion",
   img: () => <BildmoreCastleSketch />,
-  desc: "An old rusty sugar cane trailer at our farm back home",
+  desc: "Had the chance to go to North Carolina and visit a big ass mansion.",
 }
 
 export default bildmoreCastleSketch

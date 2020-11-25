@@ -23,9 +23,10 @@ const FarmSketch = () => {
 }
 
 const farmSketch = {
-  name: "farm",
+  name: "Farm",
   img: () => <FarmSketch />,
-  desc: "An old rusty sugar cane trailer at our farm back home",
+  desc:
+    "An old rusty sugar cane trailer at our farm back home in the Dominican Republic.",
 }
 
 export default farmSketch

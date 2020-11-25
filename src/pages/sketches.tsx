@@ -15,11 +15,16 @@ import {
 const SketchesPage = () => {
   // const [isOpen, setOpen] = React.useState(false)
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [sketch, setSketch] = React.useState(null)
 
-  const getImage = (img: any) => {
+  const [sketch, setSketch] = React.useState(null)
+  const [name, setName] = React.useState("")
+  const [desc, setDesc] = React.useState("")
+
+  const getImage = (img: any, name: string, desc: string) => {
     onOpen()
     setSketch(img)
+    setName(name)
+    setDesc(desc)
   }
 
   return (
@@ -38,10 +43,19 @@ const SketchesPage = () => {
         <Modal size="lg" isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Hello World</ModalHeader>
+            <ModalHeader>{name}</ModalHeader>
             <ModalCloseButton />
-            <ModalBody>
-              <div>{sketch}</div>
+            <ModalBody style={{ paddingLeft: 0, paddingRight: 0 }}>
+              <div style={{ marginBottom: 30 }}>{sketch}</div>
+              <p
+                style={{
+                  paddingLeft: "1.5rem",
+                  paddingRight: "1.5rem",
+                  marginBottom: "50px",
+                }}
+              >
+                {desc}
+              </p>
             </ModalBody>
           </ModalContent>
         </Modal>

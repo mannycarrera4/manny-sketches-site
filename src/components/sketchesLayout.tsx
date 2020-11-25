@@ -2,6 +2,7 @@ import React from "react"
 import Card from "@workday/canvas-kit-react-card"
 import * as Sketches from "./sketchImage"
 import styled from "@emotion/styled"
+import { motion } from "framer-motion"
 
 const ImportedSketches = Object.keys(Sketches)
 
@@ -14,7 +15,7 @@ const StyledImageContainer = styled("div")({
 })
 
 export interface SketchesLayoutProps {
-  handleGetImage: (img: React.ReactNode) => void
+  handleGetImage: (img: React.ReactNode, title: string, desc: string) => void
 }
 
 const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
@@ -25,22 +26,26 @@ const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
         const sketch = Sketches[sketchKey]
         console.warn(sketch)
         return (
-          <Card
-            padding={"0px"}
-            style={{
-              display: "inline-flex",
-              margin: "8px",
-              width: 300,
-              height: 200,
-              justifyContent: "center",
-              paddingTop: 0,
-            }}
-            key={sketch.name}
-            onClick={() => handleGetImage(sketch.img())}
-          >
-            <StyledImageContainer>{sketch.img()}</StyledImageContainer>
-            {/* {sketch.desc} */}
-          </Card>
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Card
+              padding={"0px"}
+              style={{
+                display: "inline-flex",
+                margin: "8px",
+                width: 300,
+                height: 200,
+                justifyContent: "center",
+                paddingTop: 0,
+                cursor: "pointer",
+              }}
+              key={sketch.name}
+              onClick={() =>
+                handleGetImage(sketch.img(), sketch.name, sketch.desc)
+              }
+            >
+              <StyledImageContainer>{sketch.img()}</StyledImageContainer>
+            </Card>
+          </motion.div>
         )
       })}
     </>

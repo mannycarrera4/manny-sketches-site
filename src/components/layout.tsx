@@ -6,9 +6,9 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { ChakraProvider } from "@chakra-ui/react"
+import { motion } from "framer-motion"
 
 import Header from "./header"
 import "./layout.css"
@@ -38,7 +38,22 @@ const Layout = ({ children }: LayoutProps) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main style={{ marginTop: 174 }}>{children}</main>
+        <motion.div
+          initial="pageInitial"
+          animate="pageAnimate"
+          variants={{
+            pageInitial: {
+              opacity: 0,
+              y: -10,
+            },
+            pageAnimate: {
+              opacity: 1,
+              y: 0,
+            },
+          }}
+        >
+          <main style={{ marginTop: 174 }}>{children}</main>
+        </motion.div>
         <footer
           style={{
             marginTop: `2rem`,

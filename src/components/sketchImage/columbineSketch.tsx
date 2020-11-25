@@ -23,9 +23,10 @@ const ColumbineSketch = () => {
 }
 
 const columbineSketch = {
-  name: "columbine",
+  name: "Columbine Flower",
   img: () => <ColumbineSketch />,
-  desc: "An old rusty sugar cane trailer at our farm back home",
+  desc:
+    "In the spring time in Colorado, these beautiful flowers bloom and cover the alpine.",
 }
 
 export default columbineSketch

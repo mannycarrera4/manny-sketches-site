@@ -23,9 +23,10 @@ const HawaiiSketch = () => {
 }
 
 const hawaiiSketch = {
-  name: "hawaii",
+  name: "Hawaii Vegetation",
   img: () => <HawaiiSketch />,
-  desc: "Got the chance to visit Hawaii and see some pretty cool waterfalls",
+  desc:
+    "I never thought I'd get the chance to go to Hawaii. Luckily, I was able to experience the beauty of it with someone special",
 }
 
 export default hawaiiSketch

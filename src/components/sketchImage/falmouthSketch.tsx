@@ -23,9 +23,10 @@ const FalmouthSketch = () => {
 }
 
 const falmouthSketch = {
-  name: "falmouth",
+  name: "Falmouth",
   img: () => <FalmouthSketch />,
-  desc: "I Really enjoyed working on the sky for this sketch",
+  desc:
+    "Not often do I get commission  work, but I did this one for my friend, Pete.",
 }
 
 export default falmouthSketch

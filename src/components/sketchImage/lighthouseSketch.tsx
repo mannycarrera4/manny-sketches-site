@@ -24,10 +24,10 @@ const LighthouseSketch = () => {
 }
 
 const lighthouseSketch = {
-  name: "lighthouse",
+  name: "Light House in Falmouth",
   img: () => <LighthouseSketch />,
   desc:
-    "A friend of mine wanted this piece of a really petty light house in Falmouth, MA",
+    "Apparently, Falmout, MA is filled with light houses. This was another commission piece that I really enjoyed working on with all the different colors.",
 }
 
 export default lighthouseSketch

@@ -23,9 +23,10 @@ const RedrocksSketch = () => {
 }
 
 const redrocksSketch = {
-  name: "redrocks",
+  name: "Red Rocks, Las Vegas",
   img: () => <RedrocksSketch />,
-  desc: "An old rusty sugar cane trailer at our farm back home",
+  desc:
+    "This was one of my favorite climbing Trips I've taken. I got to stay in Vegas, and then go to Red Rocks for some climbing.",
 }
 
 export default redrocksSketch
