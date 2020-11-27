@@ -18,16 +18,6 @@ export interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <ChakraProvider>
       <Header siteTitle={"Manny Sketches"} />

@@ -1,5 +1,5 @@
 import React from "react"
-import Card from "@workday/canvas-kit-react-card"
+import { Box } from "@chakra-ui/react"
 import * as Sketches from "./sketchImage"
 import styled from "@emotion/styled"
 import { motion } from "framer-motion"
@@ -27,8 +27,10 @@ const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
 
         return (
           <motion.div key={sketch.name} whileHover={{ scale: 1.05 }}>
-            <Card
-              padding={"0px"}
+            <Box
+              boxShadow="md"
+              borderRadius={8}
+              p={0}
               style={{
                 display: "inline-flex",
                 margin: "8px",
@@ -43,7 +45,7 @@ const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
               }
             >
               <StyledImageContainer>{sketch.img()}</StyledImageContainer>
-            </Card>
+            </Box>
           </motion.div>
         )
       })}

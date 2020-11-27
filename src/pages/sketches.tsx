@@ -1,7 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SketchesLayout from "../components/sketchesLayout"
 import {
   Modal,
   ModalOverlay,
@@ -11,9 +8,10 @@ import {
   useDisclosure,
   ModalHeader,
 } from "@chakra-ui/react"
+import Layout from "../components/layout"
+import SketchesLayout from "../components/sketchesLayout"
 
-const SketchesPage = () => {
-  // const [isOpen, setOpen] = React.useState(false)
+const SketchesPage = (): JSX.Element => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const [sketch, setSketch] = React.useState(null)
@@ -37,9 +35,6 @@ const SketchesPage = () => {
         }}
       >
         <SketchesLayout handleGetImage={getImage} />
-        {/* <Modal handleClose={c} open={isOpen} heading="">
-          {sketch}
-        </Modal> */}
         <Modal size="lg" isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>

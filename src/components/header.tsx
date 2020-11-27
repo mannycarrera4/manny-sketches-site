@@ -72,10 +72,6 @@ const Header = ({ siteTitle }: HeaderProps) => (
             <Link to="/">About</Link>
             <div className="hover-underline"></div>
           </StyledLink>
-          {/* <StyledLink>
-            <Link to="/">Contact</Link>
-            <div className="hover-underline"></div>
-          </StyledLink> */}
           <StyledLink>
             <Link to="/sketches">Sketches</Link>
             <div className="hover-underline"></div>

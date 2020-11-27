@@ -24,7 +24,7 @@ const IndexPage = () => {
         <div
           style={{
             display: "inline-flex",
-            maxWidth: 322,
+            maxWidth: "100%",
             flexDirection: "column",
           }}
         >
@@ -44,7 +44,7 @@ const IndexPage = () => {
             </Button>
           </div>
         </div>
-        <div style={{ display: "inline-block", width: 700 }}>
+        <div style={{ display: "inline-block", width: "100%" }}>
           <ImageHome />
         </div>
       </div>
