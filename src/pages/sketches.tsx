@@ -18,6 +18,7 @@ const SketchesPage = (): JSX.Element => {
   const [name, setName] = React.useState("")
   const [desc, setDesc] = React.useState("")
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const getImage = (img: any, name: string, desc: string) => {
     onOpen()
     setSketch(img)
