@@ -3,10 +3,6 @@ import React from "react"
 import Logo from "../components/logo"
 import styled from "@emotion/styled"
 
-export interface HeaderProps {
-  siteTitle: string
-}
-
 const StyledLink = styled("div")({
   display: "inline-flex",
   flexDirection: "column",
@@ -32,7 +28,7 @@ const StyledLink = styled("div")({
   },
 })
 
-const Header = ({ siteTitle }: HeaderProps) => (
+const Header = () => (
   <header
     style={{
       background: `white`,
