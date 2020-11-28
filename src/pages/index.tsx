@@ -1,10 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react"
 import { navigate } from "gatsby"
-import { Button } from "@chakra-ui/react"
 
 import Layout from "../components/layout"
 import ImageHome from "../components/imageHome"
-import SEO from "../components/seo"
+import { Text, Heading, Flex, Button } from "@chakra-ui/react"
 
 const IndexPage = () => {
   const handleViewSketches = () => {
@@ -12,14 +12,11 @@ const IndexPage = () => {
   }
   return (
     <Layout>
-      <SEO title="Home" />
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "calc(100vh - 200px)",
-        }}
+      <Flex
+        alignItems="center"
+        justifyContent="center"
+        height="calc(100vh - 200px)"
+        flexDirection={{ base: "column", md: "row" }}
       >
         <div
           style={{
@@ -28,26 +25,26 @@ const IndexPage = () => {
             flexDirection: "column",
           }}
         >
-          <h1 style={{ fontSize: 64, marginBottom: 16 }}>Bievenidos</h1>
-          <p style={{ marginBottom: "20px" }}>
+          <Heading as="h1" mb={"16px"} size="2xl">
+            Bievenidos!
+          </Heading>
+          <Text mb={"24px"}>
             I'm Manny and I'd like to share with you some of my sketches.
-          </p>
-          <div style={{ display: "flex" }}>
-            <Button
-              onClick={handleViewSketches}
-              css={{ width: "150px" }}
-              variant="solid"
-              size="md"
-              colorScheme="blue"
-            >
-              View Sketches
-            </Button>
-          </div>
+          </Text>
+
+          <Button
+            onClick={handleViewSketches}
+            variant="solid"
+            size="md"
+            colorScheme="blue"
+          >
+            View Sketches
+          </Button>
         </div>
         <div style={{ display: "inline-block", width: "100%" }}>
           <ImageHome />
         </div>
-      </div>
+      </Flex>
     </Layout>
   )
 }
