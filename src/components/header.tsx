@@ -65,7 +65,7 @@ const Header = () => (
         </Link>
         <div>
           <StyledLink>
-            <Link to="/">About</Link>
+            <Link to="/about">About</Link>
             <div className="hover-underline"></div>
           </StyledLink>
           <StyledLink>
