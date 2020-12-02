@@ -9,8 +9,9 @@ const AboutPage = () => {
       <Flex align="center" justify="center" flexDirection="column">
         <Center style={{ maxWidth: "700px", width: "100%" }}>
           <Heading size="2xl" textAlign="center" mb="60px">
-            I'm a <span style={{ color: "#0079ff" }}>caribbean</span> that fell
-            in love with the <span style={{ color: "#02c85e" }}>mountains</span>
+            {"I'm a"} <span style={{ color: "#0079ff" }}>caribbean</span> that
+            fell in love with the{" "}
+            <span style={{ color: "#02c85e" }}>mountains</span>
           </Heading>
         </Center>
         <div style={{ width: "80%", marginBottom: "30px" }}>
