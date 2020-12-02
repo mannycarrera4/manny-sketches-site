@@ -36,7 +36,7 @@ const SketchesPage = (): JSX.Element => {
         }}
       >
         <SketchesLayout handleGetImage={getImage} />
-        <Modal size="lg" isOpen={isOpen} onClose={onClose}>
+        <Modal size="xl" isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>{name}</ModalHeader>

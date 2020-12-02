@@ -26,7 +26,7 @@ const IndexPage = () => {
           }}
         >
           <Heading as="h1" mb={"16px"} size="2xl">
-            Bievenidos!
+            Bienvenidos!
           </Heading>
           <Text mb={"24px"}>
             I'm Manny and I'd like to share with you some of my sketches.
