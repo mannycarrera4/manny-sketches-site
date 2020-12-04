@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react"
 import Layout from "../components/layout"
 import SketchesLayout from "../components/sketchesLayout"
+import Filter from "../components/filter"
 
 const SketchesPage = (): JSX.Element => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -28,6 +29,7 @@ const SketchesPage = (): JSX.Element => {
 
   return (
     <Layout>
+      <Filter />
       <div
         style={{
           display: "flex",

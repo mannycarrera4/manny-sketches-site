@@ -11,22 +11,20 @@ const StyledLink = styled("div")({
   a: {
     textDecoration: "none",
     color: "#3182ce",
-  },
-  ".hover-underline": {
-    height: "3px",
-    backgroundColor: "#2b6cb0",
-    width: 0,
-    transition: "width 150ms ease-out",
+    borderBottom: "3px solid transparent",
+    transition: "border 150ms ease-out",
   },
   "&:hover": {
     a: {
       color: "#2b6cb0",
-    },
-    ".hover-underline": {
-      width: "100%",
+      borderBottom: "3px solid #2b6cb0",
     },
   },
 })
+
+const activeLinkStyle = {
+  borderBottom: "3px solid #2b6cb0",
+}
 
 const Header = () => (
   <header
@@ -65,12 +63,14 @@ const Header = () => (
         </Link>
         <div>
           <StyledLink>
-            <Link to="/about">About</Link>
-            <div className="hover-underline"></div>
+            <Link to="/about" activeStyle={activeLinkStyle}>
+              About
+            </Link>
           </StyledLink>
           <StyledLink>
-            <Link to="/sketches">Sketches</Link>
-            <div className="hover-underline"></div>
+            <Link activeStyle={activeLinkStyle} to="/sketches">
+              Sketches
+            </Link>
           </StyledLink>
         </div>
       </div>
