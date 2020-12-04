@@ -27,6 +27,7 @@ const arturoSketch = {
   img: () => <ArturoSketch />,
   desc:
     "This is my nephew, Arturo. He's a little monster. I usually never draw people but I made an exception for this little booger.",
+  cat: "all",
 }
 
 export default arturoSketch

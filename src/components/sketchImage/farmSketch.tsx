@@ -27,6 +27,7 @@ const farmSketch = {
   img: () => <FarmSketch />,
   desc:
     "An old rusty sugar cane trailer at our farm back home in the Dominican Republic.",
+  cat: "outdoors",
 }
 
 export default farmSketch

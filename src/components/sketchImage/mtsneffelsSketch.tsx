@@ -26,6 +26,7 @@ const mtsneffelsSketch = {
   name: "Mt Sneffels",
   img: () => <MtSneffelsSketch />,
   desc: "Drew this from a photo someone took and fell in love with the colors.",
+  cat: "outdoors",
 }
 
 export default mtsneffelsSketch

@@ -27,6 +27,7 @@ const flatironsSketch = {
   img: () => <FlatironsSketch />,
   desc:
     "I remember the first time I saw the flatirons, my job dropped. I'm glad I can call this place home.",
+  cat: "outdoors",
 }
 
 export default flatironsSketch

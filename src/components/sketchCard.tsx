@@ -1,10 +1,7 @@
 import React from "react"
 import { Box } from "@chakra-ui/react"
-import * as Sketches from "./sketchImage"
 import styled from "@emotion/styled"
 import { motion } from "framer-motion"
-
-const ImportedSketches = Object.keys(Sketches)
 
 const StyledImageContainer = styled("div")({
   position: "relative",
@@ -14,16 +11,17 @@ const StyledImageContainer = styled("div")({
   borderRadius: "8px",
 })
 
-export interface SketchesLayoutProps {
+export interface SketchCardProps {
   handleGetImage: (img: React.ReactNode, title: string, desc: string) => void
+  filteredSketches: any
 }
 
-const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
+const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
   return (
     <>
-      {ImportedSketches.map(sketchKey => {
+      {filteredSketches.map(sketchKey => {
         // @ts-ignore
-        const sketch = Sketches[sketchKey]
+        const sketch = sketchKey
 
         return (
           <motion.div key={sketch.name} whileHover={{ scale: 1.05 }}>
@@ -53,4 +51,4 @@ const SketchesLayout = ({ handleGetImage }: SketchesLayoutProps) => {
   )
 }
 
-export default SketchesLayout
+export default SketchCard

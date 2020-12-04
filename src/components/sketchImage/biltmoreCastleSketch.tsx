@@ -26,6 +26,7 @@ const bildmoreCastleSketch = {
   name: "Biltmore Mansion",
   img: () => <BildmoreCastleSketch />,
   desc: "Had the chance to go to North Carolina and visit a big ass mansion.",
+  cat: "outdoors",
 }
 
 export default bildmoreCastleSketch
