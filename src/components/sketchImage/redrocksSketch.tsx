@@ -27,6 +27,7 @@ const redrocksSketch = {
   img: () => <RedrocksSketch />,
   desc:
     "This was one of my favorite climbing Trips I've taken. I got to stay in Vegas, and then go to Red Rocks for some climbing.",
+  cat: "outdoors",
 }
 
 export default redrocksSketch

@@ -27,6 +27,7 @@ const blackCatSketch = {
   img: () => <BlackCatSketch />,
   desc:
     "I got commissioned to draw this happy looking dog. I loved that he was next to a McDonalds box.",
+  cat: "animals",
 }
 
 export default blackCatSketch

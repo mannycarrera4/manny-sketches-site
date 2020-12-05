@@ -11,7 +11,7 @@ import redrocksSketch from "./redrocksSketch"
 import arturoSketch from "./arturoSketch"
 import columbineSketch from "./columbineSketch"
 
-export {
+export const sketchesArr = [
   falmouthSketch,
   hawaiiSketch,
   blackCatSketch,
@@ -24,4 +24,4 @@ export {
   redrocksSketch,
   arturoSketch,
   columbineSketch,
-}
+]

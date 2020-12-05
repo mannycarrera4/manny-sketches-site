@@ -27,6 +27,7 @@ const canyonLandsSketch = {
   img: () => <CanyonLandsSketch />,
   desc:
     "My buddy Bryan took planned a trip to Utah and took me to Canyon Lands. It's like a minnie Grand Canyon. I feel in love with the different colors and layers of the canyon.",
+  cat: "outdoors",
 }
 
 export default canyonLandsSketch

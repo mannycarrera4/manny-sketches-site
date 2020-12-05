@@ -27,6 +27,7 @@ const columbineSketch = {
   img: () => <ColumbineSketch />,
   desc:
     "In the spring time in Colorado, these beautiful flowers bloom and cover the alpine.",
+  cat: "outdoors",
 }
 
 export default columbineSketch

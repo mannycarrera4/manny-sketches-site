@@ -27,6 +27,7 @@ const hawaiiSketch = {
   img: () => <HawaiiSketch />,
   desc:
     "I never thought I'd get the chance to go to Hawaii. Luckily, I was able to experience the beauty of it with someone special",
+  cat: "outdoors",
 }
 
 export default hawaiiSketch

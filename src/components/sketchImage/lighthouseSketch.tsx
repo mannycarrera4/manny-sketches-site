@@ -27,6 +27,7 @@ const lighthouseSketch = {
   img: () => <LighthouseSketch />,
   desc:
     "Apparently, Falmout, MA is filled with light houses. This was another commission piece that I really enjoyed working on with all the different colors.",
+  cat: "outdoors",
 }
 
 export default lighthouseSketch

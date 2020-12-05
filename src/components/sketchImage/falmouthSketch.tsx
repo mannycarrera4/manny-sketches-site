@@ -27,6 +27,7 @@ const falmouthSketch = {
   img: () => <FalmouthSketch />,
   desc:
     "Not often do I get commission  work, but I did this one for my friend, Pete.",
+  cat: "outdoors",
 }
 
 export default falmouthSketch
