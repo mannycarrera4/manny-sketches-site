@@ -17,15 +17,15 @@ import { sketchesArr } from "../components/sketchImage"
 
 const SketchesPage = (): JSX.Element => {
   const { isOpen, onOpen, onClose } = useDisclosure()
-
   const [sketch, setSketch] = React.useState(null)
   const [name, setName] = React.useState("")
   const [desc, setDesc] = React.useState("")
-  const [fileteredSketches, setFilteredSketches] = React.useState(sketchesArr)
-
+  const [filteredSketches, setFilteredSketches] = React.useState(sketchesArr)
   const [selected, setSelected] = React.useState("")
+
   const onSelect = (id: string) => {
     setSelected(id)
+
     if (id === "all") {
       setFilteredSketches(sketchesArr)
     } else {
@@ -46,7 +46,7 @@ const SketchesPage = (): JSX.Element => {
       <Filter onSelect={onSelect} selected={selected} />
       <Flex flexWrap="wrap" justify="center">
         <SketchCard
-          filteredSketches={fileteredSketches}
+          filteredSketches={filteredSketches}
           handleGetImage={getImage}
         />
         <Modal size="xl" isOpen={isOpen} onClose={onClose}>

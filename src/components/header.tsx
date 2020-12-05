@@ -30,7 +30,6 @@ const Header = () => (
   <header
     style={{
       background: `white`,
-      marginBottom: `1.45rem`,
       position: "fixed",
       top: 0,
       width: "100%",

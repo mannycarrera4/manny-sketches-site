@@ -19,7 +19,7 @@ export interface SketchCardProps {
 const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
   return (
     <>
-      {filteredSketches.map(sketchKey => {
+      {filteredSketches.map((sketchKey: any) => {
         // @ts-ignore
         const sketch = sketchKey
 

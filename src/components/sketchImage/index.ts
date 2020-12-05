@@ -11,21 +11,6 @@ import redrocksSketch from "./redrocksSketch"
 import arturoSketch from "./arturoSketch"
 import columbineSketch from "./columbineSketch"
 
-// export {
-//   falmouthSketch,
-//   hawaiiSketch,
-//   blackCatSketch,
-//   farmSketch,
-//   lighthouseSketch,
-//   mtsneffelsSketch,
-//   canyonLandsSketch,
-//   biltmorecCastleSketch,
-//   flatironsSketch,
-//   redrocksSketch,
-//   arturoSketch,
-//   columbineSketch,
-// }
-
 export const sketchesArr = [
   falmouthSketch,
   hawaiiSketch,

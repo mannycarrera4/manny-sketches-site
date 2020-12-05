@@ -41,7 +41,7 @@ const Layout = ({ children }: LayoutProps) => {
             },
           }}
         >
-          <main style={{ marginTop: 174 }}>{children}</main>
+          <main style={{ marginTop: 110 }}>{children}</main>
         </motion.div>
         <footer
           style={{
