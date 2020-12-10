@@ -12,16 +12,16 @@ import arturoSketch from "./arturoSketch"
 import columbineSketch from "./columbineSketch"
 
 export const sketchesArr = [
-  // falmouthSketch,
-  // hawaiiSketch,
-  // blackCatSketch,
-  // farmSketch,
-  // lighthouseSketch,
-  // mtsneffelsSketch,
-  // canyonLandsSketch,
-  // biltmorecCastleSketch,
-  // flatironsSketch,
-  // redrocksSketch,
+  falmouthSketch,
+  hawaiiSketch,
+  blackCatSketch,
+  farmSketch,
+  lighthouseSketch,
+  mtsneffelsSketch,
+  canyonLandsSketch,
+  biltmorecCastleSketch,
+  flatironsSketch,
+  redrocksSketch,
   arturoSketch,
-  // columbineSketch,
+  columbineSketch,
 ]

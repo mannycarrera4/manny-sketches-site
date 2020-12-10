@@ -2,7 +2,6 @@ import React from "react"
 import { Box } from "@chakra-ui/react"
 import styled from "@emotion/styled"
 import { motion } from "framer-motion"
-import arturo from "../../static/arturo.jpg"
 import useImageColor from "use-image-color"
 
 const StyledImageContainer = styled("div")({
@@ -24,13 +23,12 @@ export interface SketchCardProps {
 }
 
 const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
-  const [palette, setPalette] = React.useState([])
-  const { colors } = useImageColor(arturo, { cors: true, colors: 30 })
   return (
     <>
       {filteredSketches.map((sketchKey: any) => {
         // @ts-ignore
         const sketch = sketchKey
+        const { colors } = useImageColor(sketch.src, { cors: true, colors: 12 })
         return (
           <motion.div key={sketch.name} whileHover={{ scale: 1.05 }}>
             <Box
@@ -47,7 +45,6 @@ const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
                 cursor: "pointer",
               }}
               onClick={() => {
-                setPalette(colors)
                 handleGetImage(sketch.img(), sketch.name, sketch.desc, colors)
               }}
             >

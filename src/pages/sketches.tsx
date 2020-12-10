@@ -9,11 +9,13 @@ import {
   ModalHeader,
   Flex,
   Text,
+  Button,
 } from "@chakra-ui/react"
 import Layout from "../components/layout"
 import SketchCard from "../components/sketchCard"
 import Filter from "../components/filter"
 import { sketchesArr } from "../components/sketchImage"
+import { motion } from "framer-motion"
 
 const SketchesPage = (): JSX.Element => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -22,9 +24,12 @@ const SketchesPage = (): JSX.Element => {
   const [desc, setDesc] = React.useState("")
   const [filteredSketches, setFilteredSketches] = React.useState(sketchesArr)
   const [selected, setSelected] = React.useState("")
-  const [colorPalette, setColorPalette] = React.useState([])
+  const [paletteColors, setPaletteColors] = React.useState([])
+  const [showPalette, setShowPalette] = React.useState(false)
 
-  // const [paletteColors, setPaletteColors] = React.useState([])
+  const handleShowPalette = () => {
+    setShowPalette(!showPalette)
+  }
 
   const onSelect = (id: string) => {
     setSelected(id)
@@ -38,15 +43,12 @@ const SketchesPage = (): JSX.Element => {
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const getImage = (img: any, name: string, desc: string, palette: any) => {
-    console.warn(palette)
+    setPaletteColors(palette)
     onOpen()
     setSketch(img)
     setName(name)
     setDesc(desc)
-    setColorPalette(palette)
   }
-
-  console.warn(colorPalette)
 
   return (
     <Layout>
@@ -63,9 +65,38 @@ const SketchesPage = (): JSX.Element => {
             <ModalCloseButton />
             <ModalBody style={{ paddingLeft: 0, paddingRight: 0 }}>
               <div style={{ marginBottom: 30 }}>{sketch}</div>
-              <Text pl="1.5rem" pr="1.5rem" mb="50px">
-                {desc}
-              </Text>
+              <Flex pl="1.5rem" pr="1.5rem" flexDirection="column">
+                <Text mb="50px">{desc}</Text>
+                <Button onClick={handleShowPalette}>Show Color Palette</Button>
+                {showPalette && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    {paletteColors.map(color => (
+                      <div
+                        style={{ display: "flex", flexDirection: "column" }}
+                        key={color}
+                      >
+                        <div
+                          style={{
+                            height: 40,
+                            width: 40,
+                            backgroundColor: `${color}`,
+                            borderRadius: "50%",
+                            margin: "5px",
+                            display: "inline-flex",
+                          }}
+                        ></div>
+                        <span style={{ marginTop: "10px", color: `${color}` }}>
+                          {color}
+                        </span>
+                      </div>
+                    ))}
+                  </motion.div>
+                )}
+              </Flex>
             </ModalBody>
           </ModalContent>
         </Modal>

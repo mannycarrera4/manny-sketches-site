@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import lighthouseImgSrc from "../../../static/lighthouse-ma.jpg"
 
 const LighthouseSketch = () => {
   const data = useStaticQuery(graphql`
@@ -28,6 +29,7 @@ const lighthouseSketch = {
   desc:
     "Apparently, Falmout, MA is filled with light houses. This was another commission piece that I really enjoyed working on with all the different colors.",
   cat: "outdoors",
+  src: lighthouseImgSrc,
 }
 
 export default lighthouseSketch

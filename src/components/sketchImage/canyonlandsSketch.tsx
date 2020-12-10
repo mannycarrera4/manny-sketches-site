@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import canyonLandsImgSrc from "../../../static/canyon-lands.jpeg"
 
 const CanyonLandsSketch = () => {
   const data = useStaticQuery(graphql`
@@ -28,6 +29,7 @@ const canyonLandsSketch = {
   desc:
     "My buddy Bryan took planned a trip to Utah and took me to Canyon Lands. It's like a minnie Grand Canyon. I feel in love with the different colors and layers of the canyon.",
   cat: "outdoors",
+  src: canyonLandsImgSrc,
 }
 
 export default canyonLandsSketch
