@@ -2,6 +2,8 @@ import React from "react"
 import { Box } from "@chakra-ui/react"
 import styled from "@emotion/styled"
 import { motion } from "framer-motion"
+import arturo from "../../static/arturo.jpg"
+import useImageColor from "use-image-color"
 
 const StyledImageContainer = styled("div")({
   position: "relative",
@@ -12,17 +14,23 @@ const StyledImageContainer = styled("div")({
 })
 
 export interface SketchCardProps {
-  handleGetImage: (img: React.ReactNode, title: string, desc: string) => void
+  handleGetImage: (
+    img: React.ReactNode,
+    title: string,
+    desc: string,
+    palette: any
+  ) => void
   filteredSketches: any
 }
 
 const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
+  const [palette, setPalette] = React.useState([])
+  const { colors } = useImageColor(arturo, { cors: true, colors: 30 })
   return (
     <>
       {filteredSketches.map((sketchKey: any) => {
         // @ts-ignore
         const sketch = sketchKey
-
         return (
           <motion.div key={sketch.name} whileHover={{ scale: 1.05 }}>
             <Box
@@ -38,9 +46,10 @@ const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
                 paddingTop: 0,
                 cursor: "pointer",
               }}
-              onClick={() =>
-                handleGetImage(sketch.img(), sketch.name, sketch.desc)
-              }
+              onClick={() => {
+                setPalette(colors)
+                handleGetImage(sketch.img(), sketch.name, sketch.desc, colors)
+              }}
             >
               <StyledImageContainer>{sketch.img()}</StyledImageContainer>
             </Box>

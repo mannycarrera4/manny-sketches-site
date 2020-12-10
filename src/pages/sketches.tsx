@@ -22,6 +22,9 @@ const SketchesPage = (): JSX.Element => {
   const [desc, setDesc] = React.useState("")
   const [filteredSketches, setFilteredSketches] = React.useState(sketchesArr)
   const [selected, setSelected] = React.useState("")
+  const [colorPalette, setColorPalette] = React.useState([])
+
+  // const [paletteColors, setPaletteColors] = React.useState([])
 
   const onSelect = (id: string) => {
     setSelected(id)
@@ -34,12 +37,16 @@ const SketchesPage = (): JSX.Element => {
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const getImage = (img: any, name: string, desc: string) => {
+  const getImage = (img: any, name: string, desc: string, palette: any) => {
+    console.warn(palette)
     onOpen()
     setSketch(img)
     setName(name)
     setDesc(desc)
+    setColorPalette(palette)
   }
+
+  console.warn(colorPalette)
 
   return (
     <Layout>
