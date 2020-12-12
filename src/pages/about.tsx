@@ -27,7 +27,7 @@ const AboutPage = () => {
             I had no idea what sketching was until I got to highschool and had
             an amazing art teacher that showed me the freedom of sketching. My
             medium of choice was originally pencil, but later explored how messy
-            and perfectly un perfect water colors were.
+            and perfectly unperfect water colors were.
           </Text>
           <Text fontSize="22px" mb="30px">
             Later in college, I had the chance to participate in an Urban
@@ -36,7 +36,7 @@ const AboutPage = () => {
             it.
           </Text>
           <Text fontSize="22px" mb="30px">
-            The art you see on here are a mix of on site sketches, commissions,
+            The art you see on here are a mix of onsite sketches, commissions,
             experiences, and a little of what makes me happy. I hope you enjoy!
           </Text>
         </div>
