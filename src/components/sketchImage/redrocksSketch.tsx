@@ -26,7 +26,7 @@ const redrocksSketch = {
   name: "Red Rocks, Las Vegas",
   img: () => <RedrocksSketch />,
   desc:
-    "This was one of my favorite climbing Trips I've taken. I got to stay in Vegas, and then go to Red Rocks for some climbing.",
+    "This was one of my favorite climbing trips I've taken. I got to stay in Vegas, and then go to Red Rocks for some climbing.",
   cat: "outdoors",
 }
 
