@@ -2,7 +2,6 @@ import React from "react"
 import { Box } from "@chakra-ui/react"
 import styled from "@emotion/styled"
 import { motion } from "framer-motion"
-import useImageColor from "use-image-color"
 
 const StyledImageContainer = styled("div")({
   position: "relative",
@@ -17,7 +16,8 @@ export interface SketchCardProps {
     img: React.ReactNode,
     title: string,
     desc: string,
-    palette: any
+    src: string
+    // palette: any
   ) => void
   filteredSketches: any
 }
@@ -28,7 +28,6 @@ const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
       {filteredSketches.map((sketchKey: any) => {
         // @ts-ignore
         const sketch = sketchKey
-        const { colors } = useImageColor(sketch.src, { cors: true, colors: 12 })
         return (
           <motion.div key={sketch.name} whileHover={{ scale: 1.05 }}>
             <Box
@@ -45,7 +44,12 @@ const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
                 cursor: "pointer",
               }}
               onClick={() => {
-                handleGetImage(sketch.img(), sketch.name, sketch.desc, colors)
+                handleGetImage(
+                  sketch.img(),
+                  sketch.name,
+                  sketch.desc,
+                  sketch.src
+                )
               }}
             >
               <StyledImageContainer>{sketch.img()}</StyledImageContainer>

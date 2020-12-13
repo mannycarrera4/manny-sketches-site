@@ -15,7 +15,7 @@ import Layout from "../components/layout"
 import SketchCard from "../components/sketchCard"
 import Filter from "../components/filter"
 import { sketchesArr } from "../components/sketchImage"
-import { motion } from "framer-motion"
+import ColorPalette from "../components/colorPalette"
 
 const SketchesPage = (): JSX.Element => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -24,7 +24,7 @@ const SketchesPage = (): JSX.Element => {
   const [desc, setDesc] = React.useState("")
   const [filteredSketches, setFilteredSketches] = React.useState(sketchesArr)
   const [selected, setSelected] = React.useState("")
-  const [paletteColors, setPaletteColors] = React.useState([])
+  const [imgSrc, setImgSrc] = React.useState("")
   const [showPalette, setShowPalette] = React.useState(false)
 
   const handleShowPalette = () => {
@@ -33,7 +33,6 @@ const SketchesPage = (): JSX.Element => {
 
   const onSelect = (id: string) => {
     setSelected(id)
-
     if (id === "all") {
       setFilteredSketches(sketchesArr)
     } else {
@@ -42,12 +41,12 @@ const SketchesPage = (): JSX.Element => {
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const getImage = (img: any, name: string, desc: string, palette: any) => {
-    setPaletteColors(palette)
+  const getImage = (img: any, name: string, desc: string, src: string) => {
     onOpen()
     setSketch(img)
     setName(name)
     setDesc(desc)
+    setImgSrc(src)
   }
 
   return (
@@ -68,34 +67,7 @@ const SketchesPage = (): JSX.Element => {
               <Flex pl="1.5rem" pr="1.5rem" flexDirection="column">
                 <Text mb="50px">{desc}</Text>
                 <Button onClick={handleShowPalette}>Show Color Palette</Button>
-                {showPalette && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                  >
-                    {paletteColors.map(color => (
-                      <div
-                        style={{ display: "flex", flexDirection: "column" }}
-                        key={color}
-                      >
-                        <div
-                          style={{
-                            height: 40,
-                            width: 40,
-                            backgroundColor: `${color}`,
-                            borderRadius: "50%",
-                            margin: "5px",
-                            display: "inline-flex",
-                          }}
-                        ></div>
-                        <span style={{ marginTop: "10px", color: `${color}` }}>
-                          {color}
-                        </span>
-                      </div>
-                    ))}
-                  </motion.div>
-                )}
+                {showPalette && <ColorPalette src={imgSrc} />}
               </Flex>
             </ModalBody>
           </ModalContent>
