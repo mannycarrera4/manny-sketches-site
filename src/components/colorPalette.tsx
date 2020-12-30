@@ -12,14 +12,15 @@ const ColorPalette = ({ src, ...elemProps }: ColorPaletteProps) => {
   useEffect(() => {
     setImgSrc(src)
   }, [src])
-  const { colors } = useImageColor(imgSrc, { cors: true, colors: 12 })
+  const { colors } = useImageColor(imgSrc, { cors: true, colors: 13 })
 
   console.warn("colors arr", colors)
   return (
     <Grid
       mt="20px"
       mb="40px"
-      templateColumns="repeat(4, 1fr)"
+      templateColumns={{ base: "repeat(2, 0fr)", md: "repeat(4, 1fr)" }}
+      justifyContent="center"
       gap={2}
       {...elemProps}
     >

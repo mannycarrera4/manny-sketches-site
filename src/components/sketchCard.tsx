@@ -17,7 +17,6 @@ export interface SketchCardProps {
     title: string,
     desc: string,
     src: string
-    // palette: any
   ) => void
   filteredSketches: any
 }
@@ -34,15 +33,12 @@ const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
               boxShadow="md"
               borderRadius={8}
               p={0}
-              style={{
-                display: "inline-flex",
-                margin: "8px",
-                width: 300,
-                height: 200,
-                justifyContent: "center",
-                paddingTop: 0,
-                cursor: "pointer",
-              }}
+              margin="8px"
+              width="300px"
+              height="200px"
+              justifyContent="center"
+              paddingTop="0px"
+              cursor="pointer"
               onClick={() => {
                 handleGetImage(
                   sketch.img(),

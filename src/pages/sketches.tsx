@@ -16,6 +16,7 @@ import SketchCard from "../components/sketchCard"
 import Filter from "../components/filter"
 import { sketchesArr } from "../components/sketchImage"
 import ColorPalette from "../components/colorPalette"
+import { motion } from "framer-motion"
 
 const SketchesPage = (): JSX.Element => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -62,12 +63,31 @@ const SketchesPage = (): JSX.Element => {
           <ModalContent>
             <ModalHeader>{name}</ModalHeader>
             <ModalCloseButton />
-            <ModalBody style={{ paddingLeft: 0, paddingRight: 0 }}>
+            <ModalBody paddingLeft={0} paddingRight={0}>
               <div style={{ marginBottom: 30 }}>{sketch}</div>
-              <Flex pl="1.5rem" pr="1.5rem" flexDirection="column">
-                <Text mb="50px">{desc}</Text>
-                <Button onClick={handleShowPalette}>Show Color Palette</Button>
-                {showPalette && <ColorPalette src={imgSrc} />}
+              <Flex mb="30px" pl="1.5rem" pr="1.5rem" flexDirection="column">
+                <Text mb="20px">{desc}</Text>
+                <Button onClick={handleShowPalette}>
+                  {showPalette ? "Hide Color Palette" : "Show Color Palette"}
+                </Button>
+                {showPalette && (
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                      hidden: {
+                        opacity: 0,
+                        height: 0,
+                      },
+                      visible: {
+                        opacity: 1,
+                        height: "100%",
+                      },
+                    }}
+                  >
+                    <ColorPalette src={imgSrc} />
+                  </motion.div>
+                )}
               </Flex>
             </ModalBody>
           </ModalContent>
