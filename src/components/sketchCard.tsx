@@ -12,7 +12,12 @@ const StyledImageContainer = styled("div")({
 })
 
 export interface SketchCardProps {
-  handleGetImage: (img: React.ReactNode, title: string, desc: string) => void
+  handleGetImage: (
+    img: React.ReactNode,
+    title: string,
+    desc: string,
+    src: string
+  ) => void
   filteredSketches: any
 }
 
@@ -22,25 +27,26 @@ const SketchCard = ({ handleGetImage, filteredSketches }: SketchCardProps) => {
       {filteredSketches.map((sketchKey: any) => {
         // @ts-ignore
         const sketch = sketchKey
-
         return (
           <motion.div key={sketch.name} whileHover={{ scale: 1.05 }}>
             <Box
               boxShadow="md"
               borderRadius={8}
               p={0}
-              style={{
-                display: "inline-flex",
-                margin: "8px",
-                width: 300,
-                height: 200,
-                justifyContent: "center",
-                paddingTop: 0,
-                cursor: "pointer",
+              margin="8px"
+              width="300px"
+              height="200px"
+              justifyContent="center"
+              paddingTop="0px"
+              cursor="pointer"
+              onClick={() => {
+                handleGetImage(
+                  sketch.img(),
+                  sketch.name,
+                  sketch.desc,
+                  sketch.src
+                )
               }}
-              onClick={() =>
-                handleGetImage(sketch.img(), sketch.name, sketch.desc)
-              }
             >
               <StyledImageContainer>{sketch.img()}</StyledImageContainer>
             </Box>

@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import farmImgSrc from "../../../static/farm.jpg"
 
 const FarmSketch = () => {
   const data = useStaticQuery(graphql`
@@ -28,6 +29,7 @@ const farmSketch = {
   desc:
     "An old rusty sugar cane trailer at our farm back home in the Dominican Republic.",
   cat: "outdoors",
+  src: farmImgSrc,
 }
 
 export default farmSketch

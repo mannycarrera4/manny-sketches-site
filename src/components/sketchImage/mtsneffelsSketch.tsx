@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import mtsneffelsImgSrc from "../../../static/mt-sneffels.jpeg"
 
 const MtSneffelsSketch = () => {
   const data = useStaticQuery(graphql`
@@ -27,6 +28,7 @@ const mtsneffelsSketch = {
   img: () => <MtSneffelsSketch />,
   desc: "Drew this from a photo someone took and fell in love with the colors.",
   cat: "outdoors",
+  src: mtsneffelsImgSrc,
 }
 
 export default mtsneffelsSketch
