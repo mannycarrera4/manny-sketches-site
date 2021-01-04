@@ -50,6 +50,11 @@ const SketchesPage = (): JSX.Element => {
     setImgSrc(src)
   }
 
+  const handleModalClose = () => {
+    onClose()
+    setShowPalette(false)
+  }
+
   return (
     <Layout>
       <Filter onSelect={onSelect} selected={selected} />
@@ -58,7 +63,7 @@ const SketchesPage = (): JSX.Element => {
           filteredSketches={filteredSketches}
           handleGetImage={getImage}
         />
-        <Modal size="xl" isOpen={isOpen} onClose={onClose}>
+        <Modal size="xl" isOpen={isOpen} onClose={handleModalClose}>
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>{name}</ModalHeader>
