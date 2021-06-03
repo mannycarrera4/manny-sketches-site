@@ -52,7 +52,7 @@ const Header = () => {
         width: "100%",
         zIndex: 1,
         boxShadow:
-          scrollY > 40 ? "rgba(0, 0, 0, 0.08) 0px 2px 2px 0px" : undefined,
+          scrollY > 98 ? "rgba(0, 0, 0, 0.08) 0px 2px 2px 0px" : undefined,
       }}
     >
       <div
