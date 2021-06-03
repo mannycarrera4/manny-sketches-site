@@ -9,7 +9,7 @@
     "@emotion/core": "11.0.0",
     "@emotion/react": "11.1.1",
     "@emotion/styled": "11.0.0",
-    "@workday/canvas-kit-react-tooltip": "4.4.1",
+    "@workday/canvas-kit-react-tooltip": "4.7.0",
     "framer-motion": "2.9.5",
     "gatsby": "2.27.4",
     "gatsby-image": "2.6.0",
